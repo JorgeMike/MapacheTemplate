@@ -16,6 +16,7 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
+            
             HStack{
                 VStack(alignment: .leading){
                     Text("¡Hola Miguel!")
@@ -27,9 +28,17 @@ struct HomeView: View {
                         .foregroundColor(.gray)
                 }
                 Spacer()
-            }
+            }.padding(.bottom)
+                        
+            DashboardSummaryView(totalSales: 100, totalTransactions: 200, inventoryLevel: 300, mes: "Febrero")
             
-            Carrusel(items: items)
+            TopSellingProduct(nameImage: "sabritas", productName: "Sabritas 25g", unitsSold: 150, unitPrice: 18, earnings: 2700)
+            
+            InventoryProgress(percentageUsed: 0.43)
+            
+            BusinessTip(tip: "Considera ajustar tus precios durante los horarios pico para maximizar las ganancias.")
+            
+            // Carrusel(items: items)
             
             Spacer()
         }

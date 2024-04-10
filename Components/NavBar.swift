@@ -37,8 +37,8 @@ struct NavBar: View {
                             }
                         }
                     }
-                }
-            }.padding()
+                }.background(.white)
+            }
         }
     }
 }
@@ -48,7 +48,7 @@ struct NavBar_Previews: PreviewProvider {
     static var previews: some View {
         let items = [
             NavBarItem(icon: "house.fill", index: 0, view: AnyView(Text("Home"))),
-            NavBarItem(icon: "magnifyingglass", index: 1, view: AnyView(Text("Busqueda"))),
+            NavBarItem(icon: "magnifyingglass", index: 1, view: AnyView(NotificationsView())),
             NavBarItem(icon: "person.fill", index: 2, view: AnyView(Text("Perfil"))),
             NavBarItem(icon: "chart.bar", index: 3, view: AnyView(Text("graficas"))),
             NavBarItem(icon: "sparkles", index: 4, view: AnyView(Text("IA")))
