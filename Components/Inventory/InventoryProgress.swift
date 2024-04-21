@@ -12,12 +12,12 @@ struct InventoryProgress: View {
             
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Rendimiento Semanal")
+                    Text("Nivel de inventario")
                         .font(.headline)
                         .foregroundColor(.white)
                         .padding(.bottom, 1)
                     
-                    Text("Tu reporte semanal")
+                    Text("Algunos productos se estan agotando mas rapido, clic para ver")
                         .font(.caption)
                         .foregroundColor(.white)
                 }
