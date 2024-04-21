@@ -34,7 +34,7 @@ struct NotificationsView: View {
                 Text("Notificaciones")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .foregroundColor(.purple)
+                    .foregroundColor(.blue)
                     .padding(.leading)
 
                 ForEach(notificationsData, id: \.0) { section, data in
