@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1A11DE2BD570F800B7297B /* InventoryProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A11DD2BD570F800B7297B /* InventoryProgress.swift */; };
+		3F1A11E02BD5714500B7297B /* Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A11DF2BD5714500B7297B /* Percentage.swift */; };
 		3F4D3BCF2BC445050036E2D9 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D3BCE2BC445050036E2D9 /* PieChart.swift */; };
 		3F4D3BD12BC446680036E2D9 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D3BD02BC446680036E2D9 /* NavBar.swift */; };
 		3F4D3BD42BC447B20036E2D9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D3BD32BC447B20036E2D9 /* HomeView.swift */; };
@@ -18,7 +20,6 @@
 		3F4D3C112BC6F4090036E2D9 /* BusinessTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D3C102BC6F4090036E2D9 /* BusinessTip.swift */; };
 		3F4D3C132BC6F5310036E2D9 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D3C122BC6F5310036E2D9 /* BarChart.swift */; };
 		3F4D3C152BC6F66B0036E2D9 /* TopSellingProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D3C142BC6F66B0036E2D9 /* TopSellingProduct.swift */; };
-		3F4D3C172BC6FA590036E2D9 /* InventoryProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D3C162BC6FA590036E2D9 /* InventoryProgress.swift */; };
 		3F73AC0B2BC04BA0005D7B91 /* MapacheTemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F73AC0A2BC04BA0005D7B91 /* MapacheTemplateApp.swift */; };
 		3F73AC0D2BC04BA0005D7B91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F73AC0C2BC04BA0005D7B91 /* ContentView.swift */; };
 		3F73AC0F2BC04BA2005D7B91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F73AC0E2BC04BA2005D7B91 /* Assets.xcassets */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F1A11DD2BD570F800B7297B /* InventoryProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryProgress.swift; sourceTree = "<group>"; };
+		3F1A11DF2BD5714500B7297B /* Percentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Percentage.swift; sourceTree = "<group>"; };
 		3F4D3BCE2BC445050036E2D9 /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
 		3F4D3BD02BC446680036E2D9 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		3F4D3BD32BC447B20036E2D9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -38,7 +41,6 @@
 		3F4D3C102BC6F4090036E2D9 /* BusinessTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTip.swift; sourceTree = "<group>"; };
 		3F4D3C122BC6F5310036E2D9 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
 		3F4D3C142BC6F66B0036E2D9 /* TopSellingProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSellingProduct.swift; sourceTree = "<group>"; };
-		3F4D3C162BC6FA590036E2D9 /* InventoryProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryProgress.swift; sourceTree = "<group>"; };
 		3F73AC072BC04BA0005D7B91 /* MapacheTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapacheTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F73AC0A2BC04BA0005D7B91 /* MapacheTemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapacheTemplateApp.swift; sourceTree = "<group>"; };
 		3F73AC0C2BC04BA0005D7B91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,7 +119,8 @@
 				3F4D3C102BC6F4090036E2D9 /* BusinessTip.swift */,
 				3F4D3C122BC6F5310036E2D9 /* BarChart.swift */,
 				3F4D3C142BC6F66B0036E2D9 /* TopSellingProduct.swift */,
-				3F4D3C162BC6FA590036E2D9 /* InventoryProgress.swift */,
+				3F1A11DD2BD570F800B7297B /* InventoryProgress.swift */,
+				3F1A11DF2BD5714500B7297B /* Percentage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -201,11 +204,12 @@
 				3F4D3C152BC6F66B0036E2D9 /* TopSellingProduct.swift in Sources */,
 				3F4D3BCF2BC445050036E2D9 /* PieChart.swift in Sources */,
 				3F4D3C132BC6F5310036E2D9 /* BarChart.swift in Sources */,
+				3F1A11E02BD5714500B7297B /* Percentage.swift in Sources */,
 				3F4D3BD42BC447B20036E2D9 /* HomeView.swift in Sources */,
 				3F73AC1B2BC0518A005D7B91 /* Carrusel.swift in Sources */,
 				3F4D3C0D2BC6ECAA0036E2D9 /* Notification.swift in Sources */,
 				3F73AC0B2BC04BA0005D7B91 /* MapacheTemplateApp.swift in Sources */,
-				3F4D3C172BC6FA590036E2D9 /* InventoryProgress.swift in Sources */,
+				3F1A11DE2BD570F800B7297B /* InventoryProgress.swift in Sources */,
 				3F4D3C0F2BC6ED320036E2D9 /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

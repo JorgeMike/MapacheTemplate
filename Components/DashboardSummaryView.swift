@@ -1,10 +1,3 @@
-//
-//  DashboardSummaryView.swift
-//  MapacheTemplate
-//
-//  Created by CEDAM 13 on 10/04/24.
-//
-
 import SwiftUI
 
 struct DashboardSummaryView: View {
@@ -15,30 +8,38 @@ struct DashboardSummaryView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-             Text("Resumen de \(mes)")
-                 .font(.headline)
-                 .padding(.bottom, 5)
-
-             HStack {
-                 VStack(alignment: .leading) {
-                     Text("Ventas Totales")
-                     Text(String(format: "$%.2f", totalSales))
-                         .font(.title)
-                 }
-                 Spacer()
-                 VStack(alignment: .leading) {
-                     Text("Transacciones")
-                     Text("\(totalTransactions)")
-                         .font(.title)
-                 }
-             }
-         }
+            Text("Resumen de \(mes)")
+                .font(.headline)
+                .padding(.bottom, 5)
+                .foregroundColor(.white)
+            
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Ventas Totales")
+                    Text(String(format: "$%.2f", totalSales))
+                        .font(.title)
+                }
+                Spacer()
+                VStack(alignment: .leading) {
+                    Text("Transacciones")
+                    Text("\(totalTransactions)")
+                        .font(.title)
+                }
+            }
+            .foregroundColor(.white)
+        }
         .padding()
-        .background(Color.purple.opacity(0.2))
+        .background(
+            RoundedRectangle(cornerRadius: 10)
+                .fill(LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.6), Color.blue]), startPoint: .leading, endPoint: .trailing))
+                .shadow(radius: 5)
+        )
         .cornerRadius(10)
     }
 }
 
-#Preview {
-    DashboardSummaryView(totalSales: 100, totalTransactions: 200, inventoryLevel: 300, mes: "Enero")
+struct DashboardSummaryView_Previews: PreviewProvider {
+    static var previews: some View {
+        DashboardSummaryView(totalSales: 100, totalTransactions: 200, inventoryLevel: 300, mes: "Enero")
+    }
 }

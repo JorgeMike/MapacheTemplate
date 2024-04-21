@@ -13,16 +13,20 @@ struct HomeView: View {
         CarouselItemModel(image: "portada2", title: "Imagen 2", numberOfStars: 5),
         CarouselItemModel(image: "portada4", title: "Imagen 3", numberOfStars: 4)
     ]
+    let sampleTips = [
+        Tip(title: "¡Un producto está apunto de agotarse!", body: "Papas sabritas 25g está a punto de agotarse, quedan 8 unidades", icon: "sparkles"),
+        Tip(title: "¡Un producto está apunto de agotarse!", body: "Papas sabritas 25g está a punto de agotarse, quedan 8 unidades", icon: "sparkles"),
+        // Agrega más tips según sea necesario
+    ]
     
     var body: some View {
         VStack {
-            
             HStack{
                 VStack(alignment: .leading){
                     Text("¡Hola Miguel!")
                         .font(.system(size: 32))
                         .fontWeight(.bold)
-                        .foregroundColor(.purple)
+                        .foregroundColor(.blue)
                     Text("Bienvenido")
                         .font(.system(size: 20))
                         .foregroundColor(.gray)
@@ -36,7 +40,7 @@ struct HomeView: View {
             
             InventoryProgress(percentageUsed: 0.43)
             
-            BusinessTip(tip: "Considera ajustar tus precios durante los horarios pico para maximizar las ganancias.")
+            BusinessTip(tips: sampleTips)
             
             // Carrusel(items: items)
             

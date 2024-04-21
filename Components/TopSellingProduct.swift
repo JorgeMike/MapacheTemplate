@@ -29,11 +29,9 @@ struct TopSellingProduct: View {
 
                      Text("Unidades Vendidas:  \(unitsSold)")
                          .font(.subheadline)
-                         .foregroundColor(.secondary)
 
                      Text("Precio Unitario: $\(unitPrice, specifier: "%.2f")")
                          .font(.subheadline)
-                         .foregroundColor(.secondary)
                      
                      Text("Ganancias: $\(earnings, specifier: "%.2f")")
                          .font(.subheadline)
@@ -41,8 +39,13 @@ struct TopSellingProduct: View {
                  }
              }
          }
+        .foregroundColor(.white)
         .padding()
-        .background(Color.purple.opacity(0.05))
+        .background(
+            RoundedRectangle(cornerRadius: 10)
+                .fill(LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.6), Color.blue]), startPoint: .leading, endPoint: .trailing))
+                .shadow(radius: 5)
+        )
         .cornerRadius(10)
         
     }

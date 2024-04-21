@@ -32,7 +32,7 @@ struct NavBar: View {
                                 selectedIndex = item.index
                             }) {
                                 Image(systemName: item.icon)
-                                    .foregroundColor(selectedIndex == item.index ? .purple : .gray)
+                                    .foregroundColor(selectedIndex == item.index ? .blue : .gray)
                                     .padding()
                             }
                         }
