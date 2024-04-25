@@ -18,6 +18,11 @@ struct HomeView: View {
         Tip(title: "¡Un producto está apunto de agotarse!", body: "Papas sabritas 25g está a punto de agotarse, quedan 8 unidades", icon: "sparkles"),
         // Agrega más tips según sea necesario
     ]
+    let products: [Product] = [
+        Product(name: "Papas sabritas", volume: 55, unitOfMeasure: "g", price: 18, brand: "Sabritas", category: "Botana", image: "sabritas", stock: 13),
+        Product(name: "Coca-Cola", volume: 3 , unitOfMeasure: "L", price: 28, brand: "CocaCola", category: "Refrescos", image: "cocaCola3L", stock: 6),
+        Product(name: "Papas sol", volume: 100 , unitOfMeasure: "g", price: 20, brand: "Sol", category: "Botana", image: "papasSolLimon", stock: 6)
+    ]
     
     var body: some View {
         VStack {
@@ -38,18 +43,19 @@ struct HomeView: View {
             
             TopSellingProduct(nameImage: "sabritas", productName: "Sabritas 25g", unitsSold: 150, unitPrice: 18, earnings: 2700)
             
-            InventoryProgress(percentageUsed: 0.43)
+            NavigationLink(destination: InventoryView(products: products)){
+                InventoryProgress(percentageUsed: 0.43)
+            }
             
             BusinessTip(tips: sampleTips)
             
             // Carrusel(items: items)
             
             Spacer()
-        }
-        .padding()
+        }.padding(.horizontal)
     }
 }
 
 #Preview {
-    ContentView()
+    HomeView()
 }
